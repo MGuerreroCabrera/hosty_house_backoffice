@@ -1,0 +1,171 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--mgc-gap-s);
+}
+
+.login-container > header {
+    max-width: 500px;
+    min-width: 370px;
+    border: 1px solid var(--mgc-white);
+    border-radius: var(--mgc-radius-xs);
+    padding: var(--mgc-padding-l);
+    background-color: var(--mgc-dark-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--mgc-gap-m);
+}
+
+.login-container > header > img {
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+}
+
+.login-container > header > hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: var(--mgc-white);
+}
+
+.login-container > header > h6 {
+    color: var(--mgc-white);
+    font-size: var(--mgc-font-size-s);
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    min-width: 370px;
+    border: 1px solid var(--mgc-white);
+    gap: var(--mgc-gap-l);  
+    border-radius: var(--mgc-radius-xs);
+    padding: var(--mgc-padding-l);
+}
+
+.input-field {
+    width: 100%;
+    position: relative;
+}
+
+.input-field input {
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    color: var(--mgc-dark-grey);
+    padding: var(--mgc-padding-m);
+    border: 1px solid var(--mgc-white);
+    border-radius: var(--mgc-radius-xs);
+}
+
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    color: var(--mgc-dark-grey);
+    transition: all .3s ease;
+}
+
+.input-field input:focus ~ label {
+    top: 0;
+    left: 15px;
+    font-size: 12px;
+    padding: var(--mgc-padding-s);
+    background-color: var(--mgc-light-grey);
+}
+
+.input-field input:not(:placeholder-shown) ~ label {
+    top: 0;
+    left: 15px;
+    font-size: 12px;
+    padding: var(--mgc-padding-s);
+    background-color: var(--mgc-light-grey);
+}
+
+.input-field .input-error { 
+    border: 1px solid red;
+} 
+
+.input-field .label-error {
+    color: red;
+}
+
+.input-field > button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: var(--mgc-padding-m);
+    background-color: var(--mgc-base-turqouise);
+    border-radius: var(--mgc-radius-s);
+    color: var(--mgc-white);
+}
+
+.input-field > button:hover {
+    transition: all .3s ease;
+    background-color: var(--mgc-strong-turqouise);    
+}
+
+.fp-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: var(--mgc-padding-s);
+}
+
+.fp-container a {
+    font-size: var(--mgc-font-size-s);
+}
+
+.login-container .error-container {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mgc-error-background);
+    padding: var(--mgc-padding-m);
+    border-radius: var(--mgc-radius-s);
+    margin-top: var(--mgc-margin-s);
+}
+
+.error-message {
+    font-size: var(--mgc-font-size-s);
+    color: var(--mgc-error-text);
+}
+
+.form-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    background-color: var(--mgc-light-grey);
+}
+
+.login-container > footer {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--mgc-white);
+    border-radius: var(--mgc-radius-xs);
+    padding: var(--mgc-padding-l);
+    background-color: var(--mgc-light-grey);
+}
+
+.login-container > footer > p {
+    font-size: var(--mgc-font-size-xs);
+    color: var(--mgc-dark-grey);
+}

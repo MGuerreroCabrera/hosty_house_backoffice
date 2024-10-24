@@ -1,0 +1,90 @@
+/* Fuentes para el proyecto */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url("latoNames.css");
+
+/* Reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Definición de variables */
+:root {
+    /* Colors */
+    --mgc-primary-color: #ffffff;
+    --mgc-secondary-color: #d8d8d8;    
+    --mgc-tertiary-color: #606060;
+    --mgc-quaternary-color: #00b1be;
+    --mgc-fifth-color: #006f77;
+
+    --mgc-error-background: #f8a0a0;
+    --mgc-error-text: red;
+
+    --mgc-white: var(--mgc-primary-color);
+    --mgc-light-grey: var(--mgc-secondary-color);
+    --mgc-dark-grey: var(--mgc-tertiary-color);
+    --mgc-base-turqouise: var(--mgc-quaternary-color);
+    --mgc-strong-turqouise: var(--mgc-fifth-color);
+  
+    /* SPACINGS */
+    /* Margins */
+    --mgc-margin-s: 5px;
+    --mgc-margin-m: 10px;
+    --mgc-margin-l: 20px;
+    --mgc-margin-xl: 40px;
+    
+    /* Paddings */
+    --mgc-padding-s: 5px;
+    --mgc-padding-m: 10px;
+    --mgc-padding-l: 20px;
+    --mgc-padding-xl: 40px;
+  
+    /* Gaps */
+    --mgc-gap-s: 5px;
+    --mgc-gap-m: 10px;
+    --mgc-gap-l: 20px;
+    --mgc-gap-xl: 50px;
+  
+    /* Radius */
+    --mgc-radius-xs: 5px;
+    --mgc-radius-s: 10px;
+    --mgc-radius-m: 20px;
+    --mgc-radius-l: 30px;
+    --mgc-radius-xl: 40px;
+  
+    /* Font sizes */
+    --mgc-font-size-xs: clamp(0.6rem, 0.14vw + 0.5rem, 0.8rem);
+    --mgc-font-size-s: clamp(0.7rem, 0.15vw + 0.65rem, 0.9rem);
+    --mgc-font-size-m: clamp(0.8rem, 0.16vw + 0.75rem, 1rem);
+    --mgc-font-size-l: clamp(0.9rem, 0.18vw + 0.85rem, 1.2rem);
+    --mgc-font-size-xl: clamp(1rem, 0.2vw + 0.95rem, 1.4rem);
+
+    /* --mgc-font-size-xs: 12px;
+    --mgc-font-size-s: clamp(0.7rem, 0.15vw + 0.65rem, 0,9rem);
+    --mgc-font-size-base: clamp(1rem, 0.40vw + 0.9rem, 1.2rem);
+    --mgc-font-size-l: clamp(1.5rem, 1vw + 1.2rem, 2rem);
+    --mgc-font-size-xl: clamp(2.5rem, 2.8rem, 3.5rem); */
+}
+
+/* MEDIA QUERIES */
+/* Estilos para tablets en modo paisaje y laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* Estilos para smartphones grandes y tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+/* Estilos para smartphones pequeños */
+@media only screen and (max-width: 480px) {
+}
