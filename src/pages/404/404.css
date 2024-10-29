@@ -1,0 +1,30 @@
+.message-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--mgc-gap-l);
+    background-color: var(--mgc-dark-grey);
+}
+
+.message-container h1 {
+    font-size: var(--mgc-font-size-xl);
+    color: var( --mgc-base-turqouise);
+}
+
+.message-container p {
+    font-size: var(--mgc-font-l);
+    color: var(--mgc-light-grey);
+}
+
+.link-to-home {
+    font-size: var(--mgc-font-family-m);
+    color: var(--mgc-light-grey);
+}
+
+.link-to-home:hover {
+    color: var(--mgc-base-turqouise);
+    text-decoration: underline;
+}

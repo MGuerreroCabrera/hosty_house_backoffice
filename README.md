@@ -6,8 +6,12 @@ Cosas que vamos a realizar.
    Maquetar los imputs e implementar efecto del placeholder ( video youtube ) ✅
    Poner el validador del campo email ✅
    Poner los elementos imputs en div con img icons de mail y ojo para mostrar ocultar contraseña ( Ejemplo practica react-hooks-forms ) ✅
-4. Pantalla de funcionalidades con ( cabecera, aside, main y footer )
-5. Crear rutas de cada funcionalidad.
-6. Crear pantallas cada funcionalidad con sus respectivos formularios y funciones. También pensar en las tablas y los loadings.
-7. Refactorizar código.
-8. Fin proyecto.
+4. Ruta Not Found ✅
+5. Pantalla de funcionalidades con ( cabecera, aside, main y footer )
+6. Página y funcionalidad Olvidé mi contraseña.
+7. Responsive. Menú hamburguesa.
+8. Trabajar en la cabecera la información del usuario e icono de logout ( eliminar del localStorage el HostyHouseToken )
+9. Crear rutas de cada funcionalidad.
+10. Crear pantallas cada funcionalidad con sus respectivos formularios y funciones. También pensar en las tablas y los loadings.
+11. Refactorizar código.
+12. Fin proyecto.

@@ -1,0 +1,32 @@
+.dashboard-header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--mgc-padding-m);
+    background-color: var(--mgc-dark-grey);
+}
+
+.dashboard-header > img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.data-user-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--mgc-gap-m);
+}
+
+.dashboard-header .data-user-container > span {
+    font-size: var(--mgc-font-size-l);
+    color: var(--mgc-light-grey);
+}
+
+.dashboard-header .data-user-container > p {
+    font-size: var(--mgc-font-size-s);
+    color: var(--mgc-light-grey);
+}

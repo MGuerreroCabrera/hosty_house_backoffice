@@ -9,9 +9,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Lato", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-optical-sizing: auto;
     text-decoration: none;
     list-style: none;
 }
@@ -61,18 +58,18 @@
     --mgc-radius-xl: 40px;
   
     /* Font sizes */
+    
     --mgc-font-size-xs: clamp(0.6rem, 0.14vw + 0.5rem, 0.8rem);
-    --mgc-font-size-s: clamp(0.7rem, 0.15vw + 0.65rem, 0.9rem);
-    --mgc-font-size-m: clamp(0.8rem, 0.16vw + 0.75rem, 1rem);
-    --mgc-font-size-l: clamp(0.9rem, 0.18vw + 0.85rem, 1.2rem);
-    --mgc-font-size-xl: clamp(1rem, 0.2vw + 0.95rem, 1.4rem);
-
-    /* --mgc-font-size-xs: 12px;
     --mgc-font-size-s: clamp(0.7rem, 0.15vw + 0.65rem, 0,9rem);
     --mgc-font-size-base: clamp(1rem, 0.40vw + 0.9rem, 1.2rem);
     --mgc-font-size-l: clamp(1.5rem, 1vw + 1.2rem, 2rem);
-    --mgc-font-size-xl: clamp(2.5rem, 2.8rem, 3.5rem); */
+    --mgc-font-size-xl: clamp(2.5rem, 2.8rem, 3.5rem); 
 }
+    /* --mgc-font-size-xs: clamp(0.6rem, 0.14vw + 0.5rem, 0.8rem);
+    --mgc-font-size-s: clamp(0.7rem, 0.15vw + 0.65rem, 0.9rem);
+    --mgc-font-size-m: clamp(0.8rem, 0.16vw + 0.75rem, 1rem);
+    --mgc-font-size-l: clamp(0.9rem, 0.18vw + 0.85rem, 1.2rem);
+    --mgc-font-size-xclamp(2.5rem, 2.8rem, 3.5rem);l: clamp(1rem, 0.2vw + 0.95rem, 1.4rem); */
 
 /* MEDIA QUERIES */
 /* Estilos para tablets en modo paisaje y laptops */
