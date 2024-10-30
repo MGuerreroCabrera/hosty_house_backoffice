@@ -1,8 +1,9 @@
 import "./Features.css";
+import PageTemplate from "../../components/PageTemplate/PageTemplate";
 
 const Features = () => {
   return (
-    <div>Features</div>
+    <PageTemplate title="Características de viviendas" apiEndpoint="http://localhost:3000/api/v1/features" />
   )
 }
 

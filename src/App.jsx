@@ -10,7 +10,8 @@ import Housings from "./pages/Housings/Housings";
 import Reservations from "./pages/Reservations/Reservations";
 import Customers from "./pages/Customers/Customers";
 import Users from "./pages/Users/Users";
-import DashboardHome from "./pages/DashboardHome/DashboardHome";
+import Home from "./pages/Home/Home";
+
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/" element={ <Login/> } />
         <Route path="/forgot-password" element={<ForgotPassword/>}/>
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard/></ProtectedRoute>}>
+          <Route index element={<Home />} />
           <Route path="features" element={<Features/>}/>
           <Route path="housings" element={<Housings/>}/>
           <Route path="reservations" element={<Reservations/>}/>

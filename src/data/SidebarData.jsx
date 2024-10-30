@@ -26,7 +26,7 @@ export const SidebarData = [
         admin: false
     },
     {
-        title: "Reservations",
+        title: "Reservas",
         path: "reservations",
         icon: <FaFolderOpen />,
         cName: "nav-text",
