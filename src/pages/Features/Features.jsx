@@ -1,9 +1,15 @@
 import "./Features.css";
-import ListRecordsTemplate from "../../components/ListRecordsTemplate/ListRecordsTemplate";
+import PageTitle from "../../components/PageTitle/PageTitle";
+import AddRecordRow from "../../components/AddRecordRow/AddRecordRow";
+import Records from "../../components/Records/Records";
 
 const Features = () => {
   return (
-    <ListRecordsTemplate title="Caracterísiticas de viviendas" apiEndpoint={"http://localhost:3000/api/v1/features"}/>
+    <>
+      <PageTitle title="Características de las viviendas"/>
+      <AddRecordRow/>
+      <Records apiEndpoint={"http://localhost:3000/api/v1/features"}/>
+    </>
   )
 }
 

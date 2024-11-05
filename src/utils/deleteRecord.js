@@ -1,29 +1,30 @@
-
-// Función que elimina un registro de la BBDD
-export const deleteRecord = async (id, apiEndpoint, dispatch, fetchCallback) => {
-    // Obtener el token del usuario
-    const token = localStorage.getItem("hostyHouseToken");
-
-    // Opciones de la petición
-    const requestOptions = {
-        method: 'DELETE',
-        headers: {
-            "Authorization": `Bearer ${token}`,
-            "Content-Type": "application/json"
+// Función que elimina un registro de una colección de la BBDD
+const deleteRecord = async (id, apiEndpoint, token) => {
+    try {
+        // Crear los header de la request
+        const headers = {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
         }
-    }    
-    try { 
-        const response = await fetch(`${apiEndpoint}/${id}`, requestOptions);
-        if (response.status !== 200) {
-            const result = await response.json();
-            throw new Error(result.message || "Error al eliminar el registro");
-        }
-        // Dispatch acción para eliminar el registro
-        dispatch({ type: 'DELETE_RECORD', payload: { id } });
 
-        // Llamada a la función fetchDataCallback para refrescar el listado
-        fetchCallback();
+        // Realizar la petición a la API
+        const response = await fetch(`${apiEndpoint}/${id}`, {
+            method: "DELETE",
+            headers: headers
+        });
+        // Comprobar que haya ido bien
+        if(!response.ok) {
+            throw new Error("Error al eliminar el registro");
+        } 
+
+        // Devolver los datos de la respuesta en json
+        return await response.json();
+
     } catch (error) {
-      console.error(error);
+        console.log(error);
+        throw error;
+        
     }
-  };
+}
+
+export default deleteRecord;

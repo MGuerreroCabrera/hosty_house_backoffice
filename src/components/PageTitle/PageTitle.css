@@ -1,0 +1,19 @@
+.header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: var(--mgc-padding-xl) 0 var(--mgc-padding-s) var(--mgc-padding-s);
+    gap: var(--mgc-gap-l);
+}
+
+.header-container h1 {
+    margin-left: 20%;
+    font-size: var(--mgc-font-size-l);
+    color: var(--mgc-dark-grey);
+}
+
+.header-container p {
+    margin-left: 20%;
+    font-size: var(--mgc-font-size-m);
+    color: var(--mgc-dark-grey);
+}

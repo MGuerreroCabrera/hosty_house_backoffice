@@ -1,26 +1,19 @@
 // Función que pide los registros al backend
 
-const fetchData = async (url, dispatch, token) => {
-  dispatch({ type: 'FETCH_INIT' });
+const fetchData = async (apiEndpoint, currentPage, limit, setData, setTotalPages, setLoading) => {
+  // Poner el stado loading a true
+  setLoading(true);
+
+  // Petición a la API
   try {
-    const response = await fetch(url, {
-      headers: {
-        "Authorization": `Bearer ${token}`,
-        "Content-Type": "application/json"
-      }
-    });
-    const result = await response.json();
-
-    if (!response.ok) {
-      throw new Error(result.message || "Ha ocurrido un error en la consulta a la BBDD");
-    }
-
-    dispatch({
-      type: 'FETCH_SUCCESS',
-      payload: { data: result.data, totalRecords: result.totalRecords },
-    });
+    const response = await fetch(`${apiEndpoint}?page=${currentPage}&limit=${limit}`);
+    const data = await response.json();
+    setData(data.records);
+    setTotalPages(Math.ceil(data.totalRecords / limit));  
   } catch (error) {
-    dispatch({ type: 'FETCH_FAILURE', payload: { error: error.message } });
+    console.error("Error refrescando los registros:", error);
+  } finally {
+    setLoading(false);
   }
 };
 

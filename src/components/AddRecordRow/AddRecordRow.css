@@ -1,0 +1,28 @@
+.add-row-container {
+    width: 80%;
+    display: flex;
+    margin-left: 20%;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 var(--mgc-padding-m) var(--mgc-padding-s) 0;
+    border-bottom: 1px solid var(--mgc-strong-turqouise);
+}
+
+.add-row-container > button {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: var(--mgc-light-grey);
+    border-radius: var(--mgc-radius-s);
+    gap: var(--mgc-gap-m);
+    padding: var(--mgc-padding-m);
+    color: var(--mgc-strong-turqouise);
+    font-size: var(--mgc-font-size-s);
+}
+
+.add-row-container > button:hover {
+    background-color: var(--mgc-strong-turqouise);
+    color: var(--mgc-white);
+}
