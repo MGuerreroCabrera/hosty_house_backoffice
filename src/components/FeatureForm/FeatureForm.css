@@ -1,0 +1,138 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: var(--mgc-white);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(255, 255, 255, 0.53);
+}
+
+.title {
+    margin: 0 0 1.5rem 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.formGroup {
+margin-bottom: 1.5rem;
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.textarea {
+min-height: 100px;
+resize: vertical;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.error {
+    border-color: #dc2626;  
+}
+
+.errorMessage {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.submitButton {
+    background-color: var(--mgc-base-turqouise);
+    color: white;
+    border: none;
+}
+
+.submitButton:hover {
+    background-color: var(--mgc-strong-turqouise);
+}
+
+.cancelButton {
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+.cancelButton:hover {
+    background-color: #f9fafb;
+}
+
+.input[type="file"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.input[type="file"]:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.fileButton {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    background-color: var(--mgc-base-turqouise);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+}
+
+.fileButton:hover {
+    background-color: var(--mgc-strong-turqouise);
+}

@@ -155,6 +155,15 @@
     background-color: var(--mgc-light-grey);
 }
 
+.login-container > header > h6 {
+    font-weight: 250;
+} 
+
+.login-container .fp-container {
+    font-size: 14px;
+    font-weight: 300;
+}
+
 .login-container > footer {    
     display: flex;
     justify-content: center;

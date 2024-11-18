@@ -77,7 +77,7 @@ const Login = () => {
                 className="form-icon" />
               </div>
               <div className="fp-container">
-                <Link to="/forgot-password" >Olvidé mi contraseña</Link>              
+                <Link to="/forgot-password" title="Recuperar contraseña">Olvidé mi contraseña</Link>              
               </div>
               <div className="input-field">
                 <button type="submit">Iniciar sesión</button>

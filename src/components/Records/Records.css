@@ -4,7 +4,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: var(--mgc-padding-m);
+}
+
+.p-no-records {
+    width: 100%;
+    padding: var(--mgc-padding-m);
+    color: var(--mgc-dark-grey);
 }
 
 .data-list {
